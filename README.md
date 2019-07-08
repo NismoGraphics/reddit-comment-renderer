@@ -17,7 +17,7 @@ render(
 ```
 
 # Example
-![Example](https://raw.githubusercontent.com/AndrewYatzkan/reddit-comment-renderer/master/example.png)
+![Example](https://raw.githubusercontent.com/AndrewYatzkan/reddit-comment-renderer/master/comment.png)
 
 ### Expect future updates, planning on adding:
 - dark mode + custom colors
