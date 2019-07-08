@@ -6,7 +6,7 @@ module.exports = (username, comment, upvotes, timestamp="1h", width=1920, height
 	const ctx = canvas.getContext("2d");
 	const separator = "•"
 
-	registerFont("./fonts/rfont.ttf", { family: "rfont" });
+	registerFont(__dirname + "/fonts/rfont.ttf", { family: "rfont" });
 
 	var zoom = 3.8;
 	var fontSize = 13 * zoom;

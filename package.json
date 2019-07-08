@@ -1,6 +1,6 @@
 {
   "name": "reddit-comment-renderer",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AndrewYatzkan/reddit-comment-renderer#readme",
   "dependencies": {
     "canvas": "^2.5.0"
-  }
+  },
+  "files": [
+    "fonts/"
+  ]
 }
