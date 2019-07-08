@@ -6,8 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewYatzkan/reddit-comment-renderer.git"
+  },
   "author": "Andrew Yatzkan",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewYatzkan/reddit-comment-renderer/issues"
+  },
+  "homepage": "https://github.com/AndrewYatzkan/reddit-comment-renderer#readme",
   "dependencies": {
     "canvas": "^2.5.0"
   }
