@@ -16,6 +16,9 @@ render(
 	);
 ```
 
+# Example
+![Example](https://raw.githubusercontent.com/AndrewYatzkan/reddit-comment-renderer/master/example.png)
+
 ### Expect future updates, planning on adding:
 - dark mode + custom colors
 - desktop theme (currently mobile theme)
