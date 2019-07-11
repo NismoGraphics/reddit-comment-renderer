@@ -20,6 +20,7 @@ render(
 ![Example](https://raw.githubusercontent.com/AndrewYatzkan/reddit-comment-renderer/master/comment.png)
 
 ### Expect future updates, planning on adding:
+- auto-centering + auto-scaling
 - dark mode + custom colors
 - desktop theme (currently mobile theme)
 - replies to comments
