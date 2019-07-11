@@ -116,7 +116,7 @@ module.exports = (username, comment, upvotes, timestamp="1h", width=1920, height
 			}
 		}
 		if (line) lines.push(line);
-		return lines;
+		return lines.map(i => i.split("\n")).flat();
 	}
 
 	fs.writeFileSync(output, canvas.toDataURL().replace("data:image/png;base64,", ""), "base64");
