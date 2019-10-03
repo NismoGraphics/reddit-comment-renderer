@@ -1,7 +1,7 @@
 const { createCanvas, registerFont } = require("canvas");
 const fs = require("fs");
 
-module.exports = (username, comment, upvotes, timestamp="1h", width=1920, height=1080, zoom=3, output="out.png") => {
+module.exports = (username, comment, upvotes, timestamp="1h", width=1920, height=1080, zoom=3, dark=true, output="out.png") => {
 	const canvas = createCanvas(width, height);
 	const ctx = canvas.getContext("2d");
 	const separator = "•"
@@ -11,8 +11,8 @@ module.exports = (username, comment, upvotes, timestamp="1h", width=1920, height
 	var zoom = 3.8;
 	var fontSize = 13 * zoom;
 
-	// White background
-	ctx.fillStyle = "#ffffff";
+	// White/Dark background
+	ctx.fillStyle = (dark ? #1A1A1B : "#FFFFFF");
 	ctx.fillRect(0, 0, width, height);
 
 	// Username
