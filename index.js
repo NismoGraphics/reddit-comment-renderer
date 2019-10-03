@@ -1,7 +1,7 @@
 const { createCanvas, registerFont } = require("canvas");
 const fs = require("fs");
 
-module.exports = (username, comment, upvotes, timestamp="1h", width=1920, height=1080, zoom=3, output="out.png") => {
+module.exports = (username, comment, upvotes, timestamp="1h", width=1920, height=1080, zoom=3, dark=true, output="out.png") => {
 	const canvas = createCanvas(width, height);
 	const ctx = canvas.getContext("2d");
 	const separator = "•"
@@ -11,15 +11,15 @@ module.exports = (username, comment, upvotes, timestamp="1h", width=1920, height
 	var zoom = 3.8;
 	var fontSize = 13 * zoom;
 
-	// White background
-	ctx.fillStyle = "#ffffff";
+	// White/Dark background 
+	ctx.fillStyle = (dark ? "#1A1A1B" : "#ffffff");
 	ctx.fillRect(0, 0, width, height);
 
 	// Username
 	var leftPadding = 10 * zoom;
 	var topPadding = fontSize + 7 * zoom;
 	ctx.font = fontSize + "px Helvetica";
-	ctx.fillStyle = "#a5a4a4";
+	ctx.fillStyle = (dark ? "#818384" : "#a5a4a4");
 	ctx.fillText(username, leftPadding, topPadding)
 
 	// Separator
@@ -29,11 +29,11 @@ module.exports = (username, comment, upvotes, timestamp="1h", width=1920, height
 
 	// Timestamp
 	leftPadding += ctx.measureText(separator).width + 4 * zoom;
-	ctx.fillStyle = "#a5a4a4";
+	ctx.fillStyle = (dark ? "#818384" : "#a5a4a4");
 	ctx.fillText(timestamp, leftPadding, topPadding);
 
 	// Comment
-	ctx.fillStyle = "#222222";
+	ctx.fillStyle = (dark ? "#d7dadc" : "#222222");
 	leftPadding = 10 * zoom;
 	topPadding += 7 * zoom;
 	var lines = getLines(comment);
